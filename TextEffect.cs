@@ -67,7 +67,7 @@ namespace TextEffect
         protected override void OnCreate()
         {
             Window window = Window.Instance;
-            window.WindowSize = new Size(1000, 1000);
+            window.WindowSize = new Size(1000, 1250);
 
             string resourcePath = Tizen.Applications.Application.Current.DirectoryInfo.Resource;
             FontClient.Instance.AddCustomFontDirectory(resourcePath + "/fonts");
@@ -103,12 +103,6 @@ namespace TextEffect
             var view2 = makeView(new Size(1000, 250), image2, label2);
             RootView.Add(view2);
 
-            var image3 = makeImageView(resourcePath + "/image/wave.gif");
-            TextLabel label3 = makeTextLabel("WAVE", new Color(0.0f, 0.0f, 0.0f, 0.9f), new Color(0.0f, 0.0f, 0.0f, 0.0f), 100);
-            label3.FontFamily = "MachineatDemo";
-            var view3 = makeView(new Size(1000, 250), image3, label3);
-            RootView.Add(view3);
-
             var iamge4 = makeImageView(resourcePath + "/image/sky.jpg");
             TextLabel label4 = makeTextLabel("SUNSET", new Color(0.0f, 0.0f, 0.0f, 0.5f), new Color(0.0f, 0.0f, 0.0f, 0.0f), 150);
             var shadow = new PropertyMap();
@@ -119,6 +113,18 @@ namespace TextEffect
             label4.FontFamily = "Montserrat";
             var view4 = makeView(new Size(1000, 250), iamge4, label4);
             RootView.Add(view4);
+
+            var image3 = makeImageView(resourcePath + "/image/wave.gif");
+            TextLabel label3 = makeTextLabel("WAVE", new Color(0.0f, 0.0f, 0.0f, 0.9f), new Color(0.0f, 0.0f, 0.0f, 0.0f), 100);
+            label3.FontFamily = "MachineatDemo";
+            var view3 = makeView(new Size(1000, 250), image3, label3);
+            RootView.Add(view3);
+
+            var image5 = makeImageView(resourcePath + "/image/ocean.gif");
+            TextLabel label5 = makeTextLabel("OCEAN", new Color(1.0f, 1.0f, 1.0f, 0.8f), new Color(0.0f, 0.0f, 0.0f, 0.0f), 150);
+            label5.FontFamily = "Montserrat ExtraBold";
+            var view5 = makeView(new Size(1000, 250), image5, label5);
+            RootView.Add(view5);
         }
         static void Main(string[] args)
         {
