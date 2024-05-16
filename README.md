@@ -1,1 +1,1 @@
-![](https://github.com/Text-Effect/Effect_Example.gif)
+![](https://github.com/ANZ1217/Text-Effect/blob/main/Effect_Example.gif)
