@@ -1,0 +1,9 @@
+# csproj file path
+csproj_file: TextEffect.csproj
+
+# files monitored for dirty/modified status
+files:
+  - TextEffect.csproj
+  - TextEffect.cs
+  - tizen-manifest.xml
+  - shared/res/TextEffect.png
